@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Obat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <img src="logo pharmdata.png" width="180" height="180">
+    <header>
+        <h1>Biodata Obat</h1>
+    </header>
+    <main>
+        <input type="text" id="search" placeholder="Cari Obat..." onkeyup="searchObat()">
+        <table id="obatTable">
+            <thead>
+                <tr>
+                    <th>Nama Obat</th>
+                    <th>Jenis</th>
+                    <th>Indikasi</th>
+                    <th>Dosis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paracetamol</td>
+                    <td>Analgesik</td>
+                    <td>Menurunkan demam dan meredakan nyeri</td>
+                    <td>500 mg setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Amoxicillin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi bakteri</td>
+                    <td>500 mg setiap 12 jam</td>
+                </tr>
+                <tr>
+                    <td>Ibuprofen</td>
+                    <td>NSAID</td>
+                    <td>Peradangan</td>
+                    <td>200 mg setiap 6 jam</td>
+                </tr>
+                <tr>
+                    <td>Aspirin</td>
+                    <td>NSAID</td>
+                    <td>Antiplatelet dan antiinflamasi</td>
+                    <td>100 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Omeprazole</td>
+                    <td>Proton Pump Inhibitor</td>
+                    <td>Asam lambung</td>
+                    <td>20 mg sebelum makan</td>
+                </tr>
+                <tr>
+                    <td>Ranitidine</td>
+                    <td>H2 Blocker</td>
+                    <td>Asam lambung</td>
+                    <td>150 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Metformin</td>
+                    <td>Antidiabetik</td>
+                    <td>Diabetes tipe 2</td>
+                    <td>500 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Glibenclamide</td>
+                    <td>Antidiabetik</td>
+                    <td>Diabetes tipe 2</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr><td>Amlodipine</td>
+                    <td>Antihipertensi</td>
+                    <td>Hipertensi</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Losartan</td>
+                    <td>ARB</td>
+                    <td>Hipertensi</td>
+                    <td>50 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Captopril</td>
+                    <td>ACE Inhibitor</td>
+                    <td>Hipertensi</td>
+                    <td>12.5 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Simvastatin</td>
+                    <td>Statin</td>
+                    <td>Menurunkan kolesterol</td>
+                    <td>10 mg sebelum tidur</td>
+                </tr>
+                <tr>
+                    <td>Atorvastatin</td>
+                    <td>Statin</td>
+                    <td>Menurunkan kolesterol</td>
+                    <td>20 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Salbutamol</td>
+                    <td>Bronkodilator</td>
+                    <td>Asma</td>
+                    <td>2 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Prednisone</td>
+                    <td>Kortikosteroid</td>
+                    <td>Anti inflamasi</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Hydrochlorothiazide</td>
+                    <td>Diuretik</td>
+                    <td>Hipertensi</td>
+                    <td>25 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Furosemide</td>
+                    <td>Diuretik</td>
+                    <td>Edema</td>
+                    <td>40 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Spironolactone</td>
+                    <td>Diuretik</td>
+                    <td>Hipertensi & edema</td>
+                    <td>50 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Diazepam</td>
+                    <td>Benzodiazepine</td>
+                    <td>Insomnia & kecemasan</td>
+                    <td>5 mg sebelum tidur</td>
+                </tr>
+                <tr>
+                    <td>Fluoxetine</td>
+                    <td>Antidepresan</td>
+                    <td>Depresi</td>
+                    <td>20 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Sertraline</td>
+                    <td>Antidepresan</td>
+                    <td>Depresi & kecemasan</td>
+                    <td>50 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Clonazepam</td>
+                    <td>Benzodiazepine</td>
+                    <td>Epilepsi</td>
+                    <td>0.5 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Carbamazepine</td>
+                    <td>Antikonvulsan</td>
+                    <td>Epilepsi & neuropati</td>
+                    <td>200 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Levetiracetam</td>
+                    <td>Antikonvulsan</td>
+                    <td>Epilepsi</td>
+                    <td>500 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Risperidone</td>
+                    <td>Antipsikotik</td>
+                    <td>Skizofrenia</td>
+                    <td>2 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Olanzapine</td>
+                    <td>Antipsikotik</td>
+                    <td>Skizofrenia & bipolar</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Quetiapine</td>
+                    <td>Antipsikotik</td>
+                    <td>Gangguan mood</td>
+                    <td>25 mg sebelum tidur</td>
+                </tr>
+                <tr>
+                    <td>Aripiprazole</td>
+                    <td>Antipsikotik</td>
+                    <td>Gangguan bipolar</td>
+                    <td>10 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Tramadol</td>
+                    <td>Analgesik</td>
+                    <td>Nyeri sedang-berat</td>
+                    <td>50 mg setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Morphine</td>
+                    <td>Analgesik opioid</td>
+                    <td>Nyeri berat</td>
+                    <td>10 mg setiap 12 jam</td>
+                </tr>
+                <tr>
+                    <td>Codeine</td>
+                    <td>Analgesik opioid</td>
+                    <td>Nyeri sedang</td>
+                    <td>30 mg setiap 6 jam</td>
+                </tr>
+                <tr>
+                    <td>Ketorolac</td>
+                    <td>NSAID</td>
+                    <td>Nyeri pasca operasi</td>
+                    <td>10 mg setiap 6 jam</td>
+                </tr>
+                <tr>
+                    <td>Diclofenac</td>
+                    <td>NSAID</td>
+                    <td>Nyeri sendi</td>
+                    <td>50 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Naproxen</td>
+                    <td>NSAID</td>
+                    <td>Nyeri dan inflamasi</td>
+                    <td>250 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Acetaminophen</td>
+                    <td>Analgesik</td>
+                    <td>Demam dan nyeri</td>
+                    <td>500 mg setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Dexamethasone</td>
+                    <td>Kortikosteroid</td>
+                    <td>Inflamasi</td>
+                    <td>4 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Methylprednisolone</td>
+                    <td>Kortikosteroid</td>
+                    <td>Reaksi alergi</td>
+                    <td>16 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Budesonide</td>
+                    <td>Kortikosteroid</td>
+                    <td>Asma</td>
+                    <td>200 mcg inhalasi</td>
+                </tr>
+                <tr>
+                    <td>Insulin Lispro</td>
+                    <td>Antidiabetik</td>
+                    <td>Diabetes tipe 1</td>
+                    <td>Sesuaikan dosis</td>
+                </tr>
+                <tr>
+                    <td>Insulin Glargine</td>
+                    <td>Antidiabetik</td>
+                    <td>Diabetes tipe 1 & 2</td>
+                    <td>Sesuaikan dosis</td>
+                </tr>
+                <tr>
+                    <td>Levothyroxine</td>
+                    <td>Hormon</td>
+                    <td>Hipotiroidisme</td>
+                    <td>50 mcg sehari</td>
+                </tr>
+                <tr>
+                    <td>Propylthiouracil</td>
+                    <td>Antitiroid</td>
+                    <td>Hipertiroidisme</td>
+                    <td>100 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Warfarin</td>
+                    <td>Antikoagulan</td>
+                    <td>Pencegahan stroke</td>
+                    <td>2 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Heparin</td>
+                    <td>Antikoagulan</td>
+                    <td>Pengencer darah</td>
+                    <td>5000 IU setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Clopidogrel</td>
+                    <td>Antiplatelet</td>
+                    <td>Pencegahan serangan jantung</td>
+                    <td>75 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Metronidazole</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi bakteri & parasit</td>
+                    <td>500 mg setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Clindamycin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi bakteri</td>
+                    <td>300 mg setiap 8 jam</td>
+                </tr>
+                <tr>
+                    <td>Ciprofloxacin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi saluran kemih</td>
+                    <td>500 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Azithromycin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi saluran pernapasan</td>
+                    <td>500 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Doxycycline</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi bakteri</td>
+                    <td>100 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Gentamicin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi bakteri berat</td>
+                    <td>5 mg/kg BB per hari</td>
+                </tr>
+                <tr>
+                    <td>Vancomycin</td>
+                    <td>Antibiotik</td>
+                    <td>Infeksi MRSA</td>
+                    <td>15 mg/kg setiap 12 jam</td>
+                </tr>
+                <tr>
+                    <td>Ketoconazole</td>
+                    <td>Antijamur</td>
+                    <td>Infeksi jamur</td>
+                    <td>200 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Fluconazole</td>
+                    <td>Antijamur</td>
+                    <td>Kandidiasis</td>
+                    <td>150 mg seminggu</td>
+                </tr>
+                <tr>
+                    <td>Acyclovir</td>
+                    <td>Antivirus</td>
+                    <td>Herpes simplex</td>
+                    <td>400 mg lima kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Oseltamivir</td>
+                    <td>Antivirus</td>
+                    <td>Influenza</td>
+                    <td>75 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Remdesivir</td>
+                    <td>Antivirus</td>
+                    <td>COVID-19</td>
+                    <td>200 mg awal, lalu 100 mg/hari</td>
+                </tr>
+                <tr>
+                    <td>Hydroxychloroquine</td>
+                    <td>Antimalaria</td>
+                    <td>Malaria & lupus</td>
+                    <td>200 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Artemether/Lumefantrine</td>
+                    <td>Antimalaria</td>
+                    <td>Malaria berat</td>
+                    <td>20/120 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Albendazole</td>
+                    <td>Antiparasit</td>
+                    <td>Infeksi cacing</td>
+                    <td>400 mg sekali</td>
+                </tr>
+                <tr>
+                    <td>Pyrantel pamoate</td>
+                    <td>Antiparasit</td>
+                    <td>Cacingan</td>
+                    <td>10 mg/kg BB</td>
+                </tr>
+                <tr>
+                    <td>Propranolol</td>
+                    <td>Beta Blocker</td>
+                    <td>Hipertensi & jantung</td>
+                    <td>40 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Bisoprolol</td>
+                    <td>Beta Blocker</td>
+                    <td>Hipertensi</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Verapamil</td>
+                    <td>Calcium Channel Blocker</td>
+                    <td>Hipertensi</td>
+                    <td>80 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Diltiazem</td>
+                    <td>Calcium Channel Blocker</td>
+                    <td>Hipertensi & jantung</td>
+                    <td>30 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Digoxin</td>
+                    <td>Kardiotonik</td>
+                    <td>Gagal jantung</td>
+                    <td>0.125 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Isosorbide dinitrate</td>
+                    <td>Nitrate</td>
+                    <td>Angina</td>
+                    <td>5 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Clonidine</td>
+                    <td>Antihipertensi</td>
+                    <td>Hipertensi</td>
+                    <td>0.1 mg dua kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Nifedipine</td>
+                    <td>Calcium Channel Blocker</td>
+                    <td>Hipertensi & angina</td>
+                    <td>10 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Hydralazine</td>
+                    <td>Vasodilator</td>
+                    <td>Hipertensi</td>
+                    <td>10 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Terbutaline</td>
+                    <td>Bronkodilator</td>
+                    <td>Asma</td>
+                    <td>2.5 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Bromhexine</td>
+                    <td>Mukolitik</td>
+                    <td>Batuk berdahak</td>
+                    <td>8 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Ambroxol</td>
+                    <td>Mukolitik</td>
+                    <td>Batuk berdahak</td>
+                    <td>30 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Dextromethorphan</td>
+                    <td>Antitusif</td>
+                    <td>Batuk kering</td>
+                    <td>15 mg tiga kali sehari</td>
+                </tr>
+                <tr>
+                    <td>Levocetirizine</td>
+                    <td>Antihistamin</td>
+                    <td>Alergi</td>
+                    <td>5 mg sehari</td>
+                </tr>
+                <tr>
+                    <td>Loratadine</td>
+                    <td>Antihistamin</td>
+                    <td>Alergi</td>       
+                    <tr>
+                        <td>Esomeprazole</td>
+                        <td>Proton Pump Inhibitor</td>
+                        <td>Asam lambung</td>
+                        <td>40 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Lansoprazole</td>
+                        <td>Proton Pump Inhibitor</td>
+                        <td>Asam lambung</td>
+                        <td>30 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Pantoprazole</td>
+                        <td>Proton Pump Inhibitor</td>
+                        <td>Asam lambung</td>
+                        <td>40 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Rabeprazole</td>
+                        <td>Proton Pump Inhibitor</td>
+                        <td>Asam lambung</td>
+                        <td>20 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Cimetidine</td>
+                        <td>H2 Blocker</td>
+                        <td>Asam lambung</td>
+                        <td>400 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Famotidine</td>
+                        <td>H2 Blocker</td>
+                        <td>Asam lambung</td>
+                        <td>20 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Sucralfate</td>
+                        <td>Gastroprotektif</td>
+                        <td>Tukak lambung</td>
+                        <td>1 gram empat kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Aluminium Hydroxide</td>
+                        <td>Antasida</td>
+                        <td>Asam lambung</td>
+                        <td>500 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Magnesium Hydroxide</td>
+                        <td>Antasida</td>
+                        <td>Asam lambung</td>
+                        <td>400 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Metoclopramide</td>
+                        <td>Antiemetik</td>
+                        <td>Mual & muntah</td>
+                        <td>10 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Ondansetron</td>
+                        <td>Antiemetik</td>
+                        <td>Mual & muntah</td>
+                        <td>8 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Betahistine</td>
+                        <td>Antivertigo</td>
+                        <td>Vertigo</td>
+                        <td>16 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Diazepam</td>
+                        <td>Benzodiazepin</td>
+                        <td>Gangguan kecemasan</td>
+                        <td>5 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Alprazolam</td>
+                        <td>Benzodiazepin</td>
+                        <td>Gangguan kecemasan</td>
+                        <td>0.5 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Clonazepam</td>
+                        <td>Benzodiazepin</td>
+                        <td>Gangguan panik</td>
+                        <td>0.5 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Fluoxetine</td>
+                        <td>Antidepresan</td>
+                        <td>Depresi</td>
+                        <td>20 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Sertraline</td>
+                        <td>Antidepresan</td>
+                        <td>Depresi</td>
+                        <td>50 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Paroxetine</td>
+                        <td>Antidepresan</td>
+                        <td>Gangguan kecemasan</td>
+                        <td>20 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Amitriptyline</td>
+                        <td>Antidepresan</td>
+                        <td>Gangguan tidur & nyeri neuropatik</td>
+                        <td>25 mg sebelum tidur</td>
+                    </tr>
+                    <tr>
+                        <td>Carbamazepine</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi</td>
+                        <td>200 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Valproic Acid</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi</td>
+                        <td>500 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Phenytoin</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi</td>
+                        <td>100 mg tiga kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Levetiracetam</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi</td>
+                        <td>500 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Lamotrigine</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi</td>
+                        <td>25 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Topiramate</td>
+                        <td>Antikonvulsan</td>
+                        <td>Epilepsi & migrain</td>
+                        <td>50 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Risperidone</td>
+                        <td>Antipsikotik</td>
+                        <td>Skizofrenia</td>
+                        <td>2 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Olanzapine</td>
+                        <td>Antipsikotik</td>
+                        <td>Skizofrenia</td>
+                        <td>5 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Quetiapine</td>
+                        <td>Antipsikotik</td>
+                        <td>Gangguan bipolar</td>
+                        <td>50 mg sebelum tidur</td>
+                    </tr>
+                    <tr>
+                        <td>Clozapine</td>
+                        <td>Antipsikotik</td>
+                        <td>Skizofrenia berat</td>
+                        <td>12.5 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Aripiprazole</td>
+                        <td>Antipsikotik</td>
+                        <td>Gangguan bipolar</td>
+                        <td>10 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Hydroxyzine</td>
+                        <td>Antihistamin</td>
+                        <td>Kecemasan & alergi</td>
+                        <td>25 mg sebelum tidur</td>
+                    </tr>
+                    <tr>
+                        <td>Chlorpromazine</td>
+                        <td>Antipsikotik</td>
+                        <td>Psikosis</td>
+                        <td>100 mg sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Haloperidol</td>
+                        <td>Antipsikotik</td>
+                        <td>Psikosis akut</td>
+                        <td>5 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Lithium</td>
+                        <td>Stabilisator Mood</td>
+                        <td>Gangguan bipolar</td>
+                        <td>300 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Thioridazine</td>
+                        <td>Antipsikotik</td>
+                        <td>Skizofrenia</td>
+                        <td>50 mg dua kali sehari</td>
+                    </tr>
+                    <tr>
+                        <td>Phenobarbital</td>
+                        <td>Barbiturat</td>
+                        <td>Epilepsi</td>
+                        <td>60 mg sebelum tidur</td>
+                    </tr>
+                    <tr>
+                        <td>Midazolam</td>
+                        <td>Hipnotik</td>
+                        <td>Premedikasi anestesi</td>
+                        <td>7.5 mg sebelum operasi</td>
+                    </tr>
+                    <tr>
+                        <td>Zolpidem</td>
+                        <td>Hipnotik</td>
+                        <td>Insomnia</td>
+                        <td>10 mg sebelum tidur</td>
+                    </tr>   
+                    <tr>
+                        <td>Lisinopril</td>
+                        <td>Antihipertensi</td>
+                        <td>Hipertensi</td>
+                        <td>10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Enalapril</td>
+                        <td>ACE Inhibitor</td>
+                        <td>Hipertensi</td>
+                        <td>5 mg dua kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Ramipril</td>
+                        <td>ACE Inhibitor</td>
+                        <td>Hipertensi</td>
+                        <td>2.5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Atenolol</td>
+                        <td>Beta Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Carvedilol</td>
+                        <td>Beta Blocker</td>
+                        <td>Gagal jantung</td>
+                        <td>12.5 mg dua kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Metoprolol</td>
+                        <td>Beta Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>50 mg dua kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Nebivolol</td>
+                        <td>Beta Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Felodipine</td>
+                        <td>Calcium Channel Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Nicardipine</td>
+                        <td>Calcium Channel Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>20 mg tiga kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Amlodipine/Benazepril</td>
+                        <td>Kombinasi Antihipertensi</td>
+                        <td>Hipertensi</td>
+                        <td>5/10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Hydrochlorothiazide/Lisinopril</td>
+                        <td>Kombinasi Antihipertensi</td>
+                        <td>Hipertensi</td>
+                        <td>12.5/10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Valsartan</td>
+                        <td>ARB</td>
+                        <td>Hipertensi</td>
+                        <td>80 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Irbesartan</td>
+                        <td>ARB</td>
+                        <td>Hipertensi</td>
+                        <td>150 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Telmisartan</td>
+                        <td>ARB</td>
+                        <td>Hipertensi</td>
+                        <td>40 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Candesartan</td>
+                        <td>ARB</td>
+                        <td>Hipertensi</td>
+                        <td>8 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Aliskiren</td>
+                        <td>Renin Inhibitor</td>
+                        <td>Hipertensi</td>
+                        <td>150 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Spironolactone/Hydrochlorothiazide</td>
+                        <td>Kombinasi Diuretik</td>
+                        <td>Hipertensi</td>
+                        <td>25/25 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Eplerenone</td>
+                        <td>Diuretik</td>
+                        <td>Gagal jantung</td>
+                        <td>25 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Furosemide/Spironolactone</td>
+                        <td>Kombinasi Diuretik</td>
+                        <td>Edema</td>
+                        <td>40/50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Bumetanide</td>
+                        <td>Diuretik</td>
+                        <td>Edema</td>
+                        <td>1 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Torasemide</td>
+                        <td>Diuretik</td>
+                        <td>Edema</td>
+                        <td>10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Mannitol</td>
+                        <td>Diuretik Osmotik</td>
+                        <td>Edema serebral</td>
+                        <td>100 mg intravena</td>
+                      </tr>
+                      <tr>
+                        <td>Acetazolamide</td>
+                        <td>Diuretik</td>
+                        <td>Glaukoma</td>
+                        <td>250 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Chlorthalidone</td>
+                        <td>Diuretik</td>
+                        <td>Hipertensi</td>
+                        <td>25 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Indapamide</td>
+                        <td>Diuretik</td>
+                        <td>Hipertensi</td>
+                        <td>1.5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Triamterene/Hydrochlorothiazide</td>
+                        <td>Kombinasi Diuretik</td>
+                        <td>Hipertensi</td>
+                        <td>37.5/25 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Amiloride/Hydrochlorothiazide</td>
+                        <td>Kombinasi Diuretik</td>
+                        <td>Hipertensi</td>
+                        <td>5/50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Doxazosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>4 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Prazosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>1 mg dua kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Terazosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hipertensi</td>
+                        <td>2 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Tamsulosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>0.4 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Silodosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>8 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Alfuzosin</td>
+                        <td>Alpha Blocker</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Finasteride</td>
+                        <td>Inhibitor 5-alpha reduktase</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Dutasteride</td>
+                        <td>Inhibitor 5-alpha reduktase</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>0.5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Saw Palmetto</td>
+                        <td>Suplemen herbal</td>
+                        <td>Hiperplasia prostat</td>
+                        <td>320 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Tadalafil</td>
+                        <td>PDE5 Inhibitor</td>
+                        <td>Disfungsi ereksi</td>
+                        <td>10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Sildenafil</td>
+                        <td>PDE5 Inhibitor</td>
+                        <td>Disfungsi ereksi</td>
+                        <td>50 mg sesuai kebutuhan</td>
+                      </tr>
+                      <tr>
+                        <td>Vardenafil</td>
+                        <td>PDE5 Inhibitor</td>
+                        <td>Disfungsi ereksi</td>
+                        <td>10 mg sesuai kebutuhan</td>
+                      </tr>
+                      <tr>
+                        <td>Avanafil</td>
+                        <td>PDE5 Inhibitor</td>
+                        <td>Disfungsi ereksi</td>
+                        <td>100 mg sesuai kebutuhan</td>
+                      </tr>
+                      <tr>
+                        <td>Testosterone</td>
+                        <td>Hormon</td>
+                        <td>Hipogonadisme</td>
+                        <td>50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Methyltestosterone</td>
+                        <td>Hormon</td>
+                        <td>Hipogonadisme</td>
+                        <td>10 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Clomiphene</td>
+                        <td>Stimulan ovulasi</td>
+                        <td>Infertilitas</td>
+                        <td>50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Letrozole</td>
+                        <td>Inhibitor aromatase</td>
+                        <td>Kanker payudara</td>
+                        <td>2.5 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Anastrozole</td>
+                        <td>Inhibitor aromatase</td>
+                        <td>Kanker payudara</td>
+                        <td>1 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Tamoxifen</td>
+                        <td>Modulator reseptor estrogen</td>
+                        <td>Kanker payudara</td>
+                        <td>20 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Raloxifene</td>
+                        <td>Modulator reseptor estrogen</td>
+                        <td>Osteoporosis</td>
+                        <td>60 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Fulvestrant</td>
+                        <td>Antiestrogen</td>
+                        <td>Kanker payudara</td>
+                        <td>500 mg sebulan</td>
+                      </tr>
+                      <tr>
+                        <td>Exemestane</td>
+                        <td>Inhibitor aromatase</td>
+                        <td>Kanker payudara</td>
+                        <td>25 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Goserelin</td>
+                        <td>Agonis GnRH</td>
+                        <td>Kanker prostat</td>
+                        <td>3.6 mg sebulan</td>
+                      </tr>
+                      <tr>
+                        <td>Leuprolide</td>
+                        <td>Agonis GnRH</td>
+                        <td>Kanker prostat</td>
+                        <td>7.5 mg sebulan</td>
+                      </tr>
+                      <tr>
+                        <td>Degarelix</td>
+                        <td>Antagonis GnRH</td>
+                        <td>Kanker prostat</td>
+                        <td>80 mg sebulan</td>
+                      </tr>
+                      <tr>
+                        <td>Bicalutamide</td>
+                        <td>Antiandrogen</td>
+                        <td>Kanker prostat</td>
+                        <td>50 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Flutamide</td>
+                        <td>Antiandrogen</td>
+                        <td>Kanker prostat</td>
+                        <td>250 mg tiga kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Enzalutamide</td>
+                        <td>Antiandrogen</td>
+                        <td>Kanker prostat</td>
+                        <td>160 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Abiraterone</td>
+                        <td>Inhibitor steroidogenesis</td>
+                        <td>Kanker prostat</td>
+                        <td>1000 mg sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Cabazitaxel</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker prostat</td>
+                        <td>25 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Docetaxel</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker prostat</td>
+                        <td>75 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Paclitaxel</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker payudara</td>
+                        <td>175 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Carboplatin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker ovarium</td>
+                        <td>AUC 5 setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Cisplatin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker testis</td>
+                        <td>100 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Oxaliplatin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker kolorektal</td>
+                        <td>85 mg/m² setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Gemcitabine</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker pankreas</td>
+                        <td>1000 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Fluorouracil</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker kolorektal</td>
+                        <td>500 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Capecitabine</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker payudara</td>
+                        <td>1250 mg/m² dua kali sehari</td>
+                      </tr>
+                      <tr>
+                        <td>Methotrexate</td>
+                        <td>Kemoterapi</td>
+                        <td>Leukemia</td>
+                        <td>15 mg/m² seminggu</td>
+                      </tr>
+                      <tr>
+                        <td>Cyclophosphamide</td>
+                        <td>Kemoterapi</td>
+                        <td>Limfoma</td>
+                        <td>750 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Ifosfamide</td>
+                        <td>Kemoterapi</td>
+                        <td>Sarkoma</td>
+                        <td>1200 mg/m² setiap hari selama 5 hari</td>
+                      </tr>
+                      <tr>
+                        <td>Doxorubicin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker payudara</td>
+                        <td>60 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Epirubicin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker payudara</td>
+                        <td>100 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Vinblastine</td>
+                        <td>Kemoterapi</td>
+                        <td>Limfoma</td>
+                        <td>6 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Vincristine</td>
+                        <td>Kemoterapi</td>
+                        <td>Leukemia</td>
+                        <td>1.4 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Vinorelbine</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker paru</td>
+                        <td>30 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Etoposide</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker testis</td>
+                        <td>100 mg/m² setiap hari selama 5 hari</td>
+                      </tr>
+                      <tr>
+                        <td>Irinotecan</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker kolorektal</td>
+                        <td>125 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Topotecan</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker ovarium</td>
+                        <td>1.5 mg/m² setiap hari selama 5 hari</td>
+                      </tr>
+                      <tr>
+                        <td>Bleomycin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker testis</td>
+                        <td>30 unit setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Mitomycin</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker kandung kemih</td>
+                        <td>10 mg/m² setiap 6 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Pemetrexed</td>
+                        <td>Kemoterapi</td>
+                        <td>Kanker paru</td>
+                        <td>500 mg/m² setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Trastuzumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker payudara</td>
+                        <td>8 mg/kg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Pertuzumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker payudara</td>
+                        <td>840 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Bevacizumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker kolorektal</td>
+                        <td>10 mg/kg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Cetuximab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker kolorektal</td>
+                        <td>400 mg/m² awal, lalu 250 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Panitumumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker kolorektal</td>
+                        <td>6 mg/kg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Rituximab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Limfoma</td>
+                        <td>375 mg/m² setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Obinutuzumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Limfoma</td>
+                        <td>1000 mg setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Brentuximab vedotin</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Limfoma</td>
+                        <td>1.8 mg/kg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Daratumumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Myeloma</td>
+                        <td>16 mg/kg setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Elotuzumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Myeloma</td>
+                        <td>10 mg/kg setiap minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Ipilimumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Melanoma</td>
+                        <td>3 mg/kg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Nivolumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Melanoma</td>
+                        <td>240 mg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Pembrolizumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Melanoma</td>
+                        <td>200 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Atezolizumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker paru</td>
+                        <td>1200 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Durvalumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker paru</td>
+                        <td>10 mg/kg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Avelumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker kandung kemih</td>
+                        <td>10 mg/kg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Cemiplimab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker kulit</td>
+                        <td>350 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Tislelizumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker paru</td>
+                        <td>200 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Sintilimab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker paru</td>
+                        <td>200 mg setiap 3 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Camrelizumab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker paru</td>
+                        <td>200 mg setiap 2 minggu</td>
+                      </tr>
+                      <tr>
+                        <td>Toripalimab</td>
+                        <td>Antibodi monoklonal</td>
+                        <td>Kanker nasofaring</td>
+                        <td>240 mg setiap 3 minggu</td>
+                      </tr>                        
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
